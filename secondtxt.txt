@@ -778,4 +778,58 @@ Your branch is up to date with 'origin/main'.
 
 nothing to commit, working tree clean
 
-deleted after head in website
+<<<<<<< HEAD
+C:\nw>onettttwothree
+=======
+C:\nw>git commit -um "after delete"
+fatal: Invalid untracked files mode 'm'
+
+C:\nw>git commit -u -m "after delete"
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        secondtxt.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+C:\nw>git add "secondtxt.txt"
+
+C:\nw>git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   secondtxt.txt
+
+
+C:\nw>git commit -m "after delete1"
+[main 3607633] after delete1
+ 1 file changed, 781 insertions(+)
+ create mode 100644 secondtxt.txt
+
+C:\nw>git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+C:\nw>git pull
+Already up to date.
+
+C:\nw>git push
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 4.95 KiB | 202.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/thievekan/FirstHub.git
+   663c207..3607633  main -> main
+
+C:\nw>
+>>>>>>> 87dc135ec576cf76e76000d5c598aa55e21a86ab
+
