@@ -601,4 +601,67 @@ Turn off this advice by setting config variable advice.detachedHead to false
 
 HEAD is now at e81d52c 3rd branch
 
+C:\nw>git add fourthday2file
+fatal: pathspec 'fourthday2file' did not match any files
+
+C:\nw>git add fourthday2file.txt
+
+C:\nw>git status
+HEAD detached at origin/thievekan-patch-1
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   fourthday2file.txt
+
+
+C:\nw>git branch
+* (HEAD detached at origin/thievekan-patch-1)
+  branchone
+  main
+  secondbr
+  thievekan-patch-1
+
+C:\nw>git committ -m "day2 file from local branch head patch1"
+git: 'committ' is not a git command. See 'git --help'.
+
+The most similar command is
+        commit
+
+C:\nw>git commit -m "day2 file from local branch head patch1"
+[detached HEAD 0f4c7a0] day2 file from local branch head patch1
+ 1 file changed, 604 insertions(+)
+ create mode 100644 fourthday2file.txt
+
+C:\nw>git push
+fatal: You are not currently on a branch.
+To push the history leading to the current (detached HEAD)
+state now, use
+
+    git push origin HEAD:<name-of-remote-branch>
+
+
 C:\nw>
+C:\nw>git push origin HEAD:thievekan-patch-1
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 5.29 KiB | 492.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/thievekan/FirstHub.git
+   e81d52c..0f4c7a0  HEAD -> thievekan-patch-1
+
+C:\nw>git status
+HEAD detached from e81d52c
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   fourthday2file.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+C:\nw>git branch
+* (HEAD detached from e81d52c)
+  branchone
+  main
+  secondbr
+  thievekan-patch-1
