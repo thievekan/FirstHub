@@ -1,2 +1,6 @@
 third file
+<<<<<<< HEAD
 text added from local
+=======
+text from website
+>>>>>>> 5ce3496c8b0d94f10699b73f77565c6162a85f4b
